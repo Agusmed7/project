@@ -1,0 +1,51 @@
+.informacion{display: flex;
+    flex-direction: column;}
+
+h2{display: flex;
+    align-content: center;
+    justify-content: center;}
+
+.container .contenedorCompa{display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    align-self:center;}
+            
+.container.contenedorCompa .card{flex-wrap: wrap;
+    align-content: space-evenly;
+    align-self: center;
+    justify-self: center;}
+
+/* ACA COMIENZA PARA TABLETS */
+
+@media only screen and (min-width: 768px){
+
+.informacion{display: flex;
+    flex-direction:row;
+    padding: 0%;
+    width: 100%;}
+
+h2  {display: flex;
+    align-content: center;
+    justify-content: center;}
+
+
+.contenedor {display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-between;}
+
+
+.container.contenedorCompa{display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;}
+        
+.container.contenedorCompa .card{flex-wrap: wrap;
+    align-content: space-evenly;}
+
+
+}

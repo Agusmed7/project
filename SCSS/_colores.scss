@@ -1,0 +1,53 @@
+body{background-color: $fondo;}
+
+nav footer {background-color: $pieynav;}
+
+#borrar{background-color: $pieynav;}
+
+.contNav {
+    color: bisque;
+    border:lightsteelblue;
+    background-color: $pieynav}
+
+.contNav__li a {color: white;}
+
+.contNav__li a:hover {background-color: #111;}
+
+.contNav--acercaDe {background-color:#4CAF50;}
+
+.contNav .contNav__men {
+    color: white;
+    background-color: $pieynav}
+
+.contNav .contNav__men .contNav__men--cat{background-color: $pieynav} 
+
+.contNav .contNav__li:hover .contNav__men {
+    background-color: $pieynav;}
+    
+.informacion{background-color: $fondo;}
+
+.pieDepagina{background-color: $pieynav;}
+
+.container.contenedorCompa .card{background-color:bisque;}
+
+.gridPadre {background-color:$fondo;} 
+
+.gridPadre .encabezado {background-color: rgb(0, 0, 0);}
+      
+.gridPadre .informacion{background-color: $fondo;
+    color: white;}
+      
+.gridPadre .pieDepagina{background-color: $pieynav;}
+        
+.contNav {background-color: $pieynav;
+    color: bisque;
+    border:lightsteelblue;}
+
+.contNav #acercaDe{background-color: green;}
+
+.formulario {color: rgb(38, 8, 59);
+    background-color: $fondo;}
+
+.tituloForm {background-color: $fondo;}
+
+h3{color: black;}

@@ -1,0 +1,23 @@
+@import "grids";
+@import "flexbox";
+@import "variables";
+@import "colores";
+@import "box-modeling";
+@import "animaciones";
+@import "operaciones";
+@import "bucles";
+
+*{padding: 0;
+margin: 0;}
+
+/* mobile desing */
+
+
+.contNav {
+    list-style-type: none;
+    text-decoration: none;}
+
+
+    .contNav__li a {text-decoration: none;}
+
+    

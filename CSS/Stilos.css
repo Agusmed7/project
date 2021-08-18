@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/* mobile desing */
+.contNav {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% auto;
+  grid-template-areas: "inicio compañias contactanos" "info coberturas acercade";
+  jUstify-items: start;
+  align-items: center; }
+
+.contNav--incio {
+  grid-area: inicio; }
+
+.contNav--info {
+  grid-area: info; }
+
+.contNav--compa {
+  grid-area: compañias; }
+
+.contNav--contactanos {
+  grid-area: contactanos; }
+
+.contNav--coberturas {
+  grid-area: coberturas; }
+
+.contNav--acercaDe {
+  grid-area: acercade;
+  align-self: stretch;
+  justify-self: center; }
+
+@media only screen and (min-width: 768px) {
+  .gridPadre {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 7% auto auto auto 7%;
+    grid-template-areas: "nav nav" "logo logo" "yo yo" "yo yo" "pie pie"; }
+  .gridPadre nav.container-fluid {
+    grid-area: nav; }
+  .gridPadre .encabezado {
+    grid-area: logo;
+    justify-self: center; }
+  .gridPadre .informacion {
+    grid-area: yo; }
+  .gridPadre .pieDepagina {
+    grid-area: pie; }
+  .contNav {
+    display: grid;
+    grid-template-columns: 128px 128px 128px 128px 128px 128px;
+    grid-template-rows: 50px;
+    grid-template-areas: "inicio info compañias contactanos coberturas acercade";
+    justify-items: start;
+    align-items: center; }
+  .contNav--incio {
+    grid-area: inicio; }
+  .contNav--info {
+    grid-area: info; }
+  .contNav--compa {
+    grid-area: compañias; }
+  .contNav--contactanos {
+    grid-area: contactanos; }
+  .contNav--coberturas {
+    grid-area: coberturas; }
+  .contNav--acercaDe {
+    grid-area: acercade;
+    text-decoration: none;
+    justify-self: end;
+    font-size: smaller;
+    font-weight: bolder;
+    align-self: center; } }
+
+@media only screen and (min-width: 1024px) {
+  .gridPadre {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 6% auto auto 9%;
+    grid-template-areas: "nav nav nav nav nav" "log log log log log" "yo yo yo yo yo" "pie pie pie pie pie"; }
+  .gridPadre nav.container-fluid {
+    grid-area: nav; }
+  .gridPadre .encabezado {
+    grid-area: log; }
+  .gridPadre .informacion {
+    grid-area: yo; }
+  .gridPadre .pieDepagina {
+    grid-area: pie; }
+  .contNav {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px 120px;
+    grid-template-rows: 50px;
+    grid-template-areas: "inicio info compañias contactanos coberturas  no  acercade";
+    font-style: italic;
+    list-style-type: none;
+    text-decoration: none;
+    jUstify-items: start;
+    align-items: center; }
+  .contNav #incio {
+    grid-area: inicio;
+    text-decoration: none; }
+  .contNav #info {
+    grid-area: info;
+    text-decoration: none; }
+  .contNav #compa {
+    grid-area: compañias;
+    text-decoration: none; }
+  .contNav #contactanos {
+    grid-area: contactanos;
+    text-decoration: none; }
+  .contNav #coberturas {
+    grid-area: coberturas;
+    text-decoration: none; }
+  .contNav #acercaDe {
+    grid-area: acercade;
+    text-decoration: none;
+    justify-self: end;
+    font-size: smaller;
+    font-weight: bolder;
+    align-self: center; }
+  .gridForm {
+    display: grid;
+    grid-template-rows: 9%  12% auto 7%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "nav nav" "tituform tituform" "formu log" "pie pie"; }
+  .formulario {
+    grid-area: formu; }
+  .imagenesContacto {
+    grid-area: log;
+    justify-self: center;
+    align-self: center; }
+  .tituloForm {
+    grid-area: tituform; }
+  .pieDepagina {
+    grid-area: pie; } }
+
+@media only screen and (min-width: 1440px) {
+  .gridPadre {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 5.5% auto auto 9%;
+    grid-template-areas: "nav nav nav nav nav" "log log log log log" "yo yo yo yo yo" "pie pie pie pie pie"; }
+  .gridForm {
+    display: grid;
+    grid-template-rows: 9%  12% auto 7%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "nav nav" "tituform tituform" "formu log" "pie pie"; }
+  nav.container-fluid {
+    grid-area: nav; } }
+
+.informacion {
+  display: flex;
+  flex-direction: column; }
+
+h2 {
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+
+.container .contenedorCompa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  align-self: center; }
+
+.container.contenedorCompa .card {
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  align-self: center;
+  justify-self: center; }
+
+/* ACA COMIENZA PARA TABLETS */
+@media only screen and (min-width: 768px) {
+  .informacion {
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+    width: 100%; }
+  h2 {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-between; }
+  .container.contenedorCompa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly; }
+  .container.contenedorCompa .card {
+    flex-wrap: wrap;
+    align-content: space-evenly; } }
+
+body {
+  background-color: #c2c3c9; }
+
+nav footer {
+  background-color: #232443; }
+
+#borrar {
+  background-color: #232443; }
+
+.contNav {
+  color: bisque;
+  border: lightsteelblue;
+  background-color: #232443; }
+
+.contNav__li a {
+  color: white; }
+
+.contNav__li a:hover {
+  background-color: #111; }
+
+.contNav--acercaDe {
+  background-color: #4CAF50; }
+
+.contNav .contNav__men {
+  color: white;
+  background-color: #232443; }
+
+.contNav .contNav__men .contNav__men--cat {
+  background-color: #232443; }
+
+.contNav .contNav__li:hover .contNav__men {
+  background-color: #232443; }
+
+.informacion {
+  background-color: #c2c3c9; }
+
+.pieDepagina {
+  background-color: #232443; }
+
+.container.contenedorCompa .card {
+  background-color: bisque; }
+
+.gridPadre {
+  background-color: #c2c3c9; }
+
+.gridPadre .encabezado {
+  background-color: black; }
+
+.gridPadre .informacion {
+  background-color: #c2c3c9;
+  color: white; }
+
+.gridPadre .pieDepagina {
+  background-color: #232443; }
+
+.contNav {
+  background-color: #232443;
+  color: bisque;
+  border: lightsteelblue; }
+
+.contNav #acercaDe {
+  background-color: green; }
+
+.formulario {
+  color: #26083b;
+  background-color: #c2c3c9; }
+
+.tituloForm {
+  background-color: #c2c3c9; }
+
+h3 {
+  color: black; }
+
+body {
+  margin: 0;
+  padding: 0%;
+  font-family: Raleway;
+  height: 100%;
+  width: 100%; }
+
+nav {
+  width: 100%;
+  margin: 0%;
+  padding: 0%; }
+
+nav.container-fluid {
+  padding: 0;
+  margin: 0; }
+
+ul.contNav {
+  margin: 0;
+  padding: 0%; }
+
+.contNav__li a {
+  padding: 14px 16px;
+  position: relative; }
+
+.contNav--acercaDe {
+  font-size: smaller;
+  font-weight: bolder;
+  overflow: auto; }
+
+.contNav .contNav__men {
+  position: absolute;
+  display: none;
+  z-index: 1000000000000000;
+  border: none; }
+
+.contNav .contNav__men .contNav__men--cat {
+  display: block; }
+
+.contNav .contNav__li:hover .contNav__men {
+  display: block;
+  width: 20rem; }
+
+.encabezado {
+  width: 100%; }
+
+.col-md-4 {
+  width: 328px; }
+
+.card.mb-3.informacion.container {
+  margin-top: 1rem; }
+
+.informacion {
+  margin: 0%; }
+
+.pieDepagina {
+  margin: 0; }
+
+.pieDepagina__autor {
+  margin: 0%; }
+
+.formulario {
+  margin-bottom: 1rem; }
+
+.btn-primary {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.imagenesContacto {
+  margin-bottom: 1rem; }
+
+.container.contenedorCompa .card {
+  margin-top: 1rem;
+  width: 18rem;
+  margin-bottom: 1rem; }
+
+@media only screen and (min-width: 768px) {
+  .formulario {
+    margin-left: 0.5rem; }
+  .btn-primary {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .form-select {
+    width: 10rem; }
+  .container.contenedorCompa .card {
+    margin-top: 1rem;
+    width: 18rem; }
+  .informacion {
+    padding: 0%;
+    width: 100%; }
+  .row {
+    flex-wrap: nowrap; }
+  .gridPadre .pieDepagina {
+    width: 100%; }
+  .contNav {
+    width: 100%;
+    padding: 0%; } }
+
+@media only screen and (min-width: 1024px) {
+  .gridPadre .contNav {
+    height: 50px;
+    width: 100%;
+    margin: 0; }
+  .gridPadre .pieDepagina {
+    height: 5rem;
+    margin-bottom: 0%;
+    width: 100%; }
+  .contNav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+  .formulario {
+    margin-right: 0%; }
+  .tituloForm {
+    font-size: 4rem; } }
+
+@media only screen and (min-width: 1440px) {
+  ul.contNav {
+    width: 100%; } }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.informacion__titulo {
+  animation-duration: 5s;
+  animation-name: aparecer; }
+
+h2 {
+  animation-duration: 5s;
+  animation-name: aparecer; }
+
+h1 {
+  animation-duration: 5s;
+  animation-name: aparecer; }
+
+.formulario {
+  animation-duration: 3s;
+  animation-name: aparecer; }
+
+@media only screen and (min-width: 768px) {
+  .container.contenedorCompa .card:hover {
+    transform: scale(1.2, 1.2); }
+  .contNav--acercaDe {
+    transform: translate(-15px); } }
+
+@media only screen and (min-width: 1440px) {
+  .contNav--acercaDe {
+    transform: translate(400px); } }
+
+p.pieDepagina__redes {
+  background-color: #fa1111; }
+
+.pieDepagina__redes-1 {
+  width: 100rem; }
+
+.pieDepagina__redes-2 {
+  width: 50rem; }
+
+.pieDepagina__redes-3 {
+  width: 33.33333rem; }
+
+.pieDepagina__redes-4 {
+  width: 25rem; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+/* mobile desing */
+.contNav {
+  list-style-type: none;
+  text-decoration: none; }
+
+.contNav__li a {
+  text-decoration: none; }

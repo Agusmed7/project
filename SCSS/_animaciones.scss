@@ -1,0 +1,31 @@
+@keyframes aparecer {
+    0% {opacity: 0;}
+    100% { opacity: 1;} }
+
+.informacion__titulo{animation-duration: 5s;
+    animation-name: aparecer;}
+
+h2 {animation-duration: 5s;
+    animation-name: aparecer;}
+
+h1 {animation-duration: 5s;
+    animation-name: aparecer;}
+
+.formulario {animation-duration: 3s;
+    animation-name: aparecer;}
+
+@media only screen and (min-width: 768px) {
+
+    .container.contenedorCompa .card:hover {transform: scale(1.2,1.2);}    
+
+.contNav--acercaDe {transform: translate(-15px);} 
+
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+.contNav--acercaDe {transform: translate(400px);} 
+
+
+}    

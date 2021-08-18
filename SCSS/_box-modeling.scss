@@ -1,0 +1,129 @@
+body {margin: 0;
+    padding: 0%;
+    font-family: Raleway;
+    height: 100%;
+    width: 100%; }
+
+nav{width: 100%;
+margin: 0%;
+padding: 0%;}
+
+nav.container-fluid{
+    padding: 0;
+    margin: 0;}
+    
+ul.contNav{margin: 0;
+padding: 0%;}
+
+.contNav__li a {         
+    padding: 14px 16px;
+    position: relative;}
+
+.contNav--acercaDe{
+    font-size: smaller;
+    font-weight: bolder;
+    overflow: auto;} 
+    
+.contNav .contNav__men {position: absolute;
+    display: none;
+    z-index: 1000000000000000;
+    border:none;}
+    
+.contNav .contNav__men .contNav__men--cat{display:block;}
+    
+.contNav .contNav__li:hover .contNav__men {display: block;
+    width: 20rem;}
+    
+.encabezado { width: 100%;}
+
+.col-md-4{width: 328px;}
+
+.card.mb-3.informacion.container {margin-top:1rem;}
+    
+.informacion{margin: 0%;}
+
+
+
+.pieDepagina {margin: 0;}
+    
+.pieDepagina__autor{margin: 0%;}
+
+.formulario{margin-bottom: 1rem;} 
+
+.btn-primary {margin-top: 1rem;
+    margin-bottom: 1rem;}
+
+.imagenesContacto{margin-bottom: 1rem;}
+
+.container.contenedorCompa .card{
+    margin-top: 1rem;
+    width: 18rem;
+    margin-bottom: 1rem;}
+
+
+
+@media only screen and (min-width: 768px){
+
+.formulario{margin-left: 0.5rem;}   
+
+.btn-primary {margin-top: 1rem;
+margin-bottom: 1rem;}
+
+.form-select {width: 10rem;}
+
+.container.contenedorCompa .card{margin-top: 1rem;
+    width: 18rem;}
+    
+.informacion{ padding: 0%;
+    width: 100%;}
+
+.row{flex-wrap: nowrap;}
+
+
+.gridPadre .pieDepagina {width: 100%;}  
+
+
+
+.contNav {
+    width: 100%;
+    padding: 0%;}
+}
+@media only screen and (min-width: 1024px){
+
+.gridPadre .contNav{height: 50px;
+    width: 100%;
+    margin: 0;}
+
+
+.gridPadre .pieDepagina{height: 5rem;
+    margin-bottom: 0%;
+    width: 100%;}
+        
+
+
+
+            
+.contNav {margin-left: auto;
+    margin-right: auto;
+    width: 100%;}
+
+.formulario{margin-right: 0%;}
+
+.tituloForm {font-size: 4rem;}
+
+
+
+}
+
+
+@media only screen and (min-width: 1440px){
+
+ul.contNav{width: 100%;}
+
+
+
+
+
+
+
+}

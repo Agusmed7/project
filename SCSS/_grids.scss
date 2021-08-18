@@ -1,0 +1,167 @@
+/* mobile desing */
+
+.contNav {display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% auto;
+    grid-template-areas: 
+    "inicio compañias contactanos"
+    "info coberturas acercade";
+    jUstify-items: start;
+    align-items: center;}
+
+.contNav--incio{grid-area: inicio;}
+    
+.contNav--info{grid-area: info;}
+              
+.contNav--compa{grid-area: compañias;}
+              
+.contNav--contactanos{grid-area: contactanos;}
+              
+.contNav--coberturas{grid-area: coberturas;}
+              
+.contNav--acercaDe{grid-area: acercade;
+    align-self: stretch;
+    justify-self: center;}     
+
+@media only screen and (min-width: 768px) {
+
+.gridPadre{display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 7% auto auto auto 7%;
+    grid-template-areas: 
+    "nav nav"
+    "logo logo"
+    "yo yo"
+    "yo yo"
+    "pie pie";}
+  
+.gridPadre nav.container-fluid {grid-area: nav; }
+
+.gridPadre .encabezado {grid-area: logo;
+    justify-self: center;}
+
+      
+.gridPadre .informacion {grid-area: yo;}
+      
+.gridPadre .pieDepagina {grid-area: pie;}    
+
+.contNav {display: grid;
+    grid-template-columns: 128px 128px 128px 128px 128px 128px;
+    grid-template-rows: 50px;
+    grid-template-areas: "inicio info compañias contactanos coberturas acercade";
+    justify-items: start;
+    align-items: center;}
+
+.contNav--incio{grid-area: inicio;}
+            
+.contNav--info{grid-area: info;}
+                      
+.contNav--compa{grid-area: compañias;}
+                      
+.contNav--contactanos{grid-area: contactanos;}
+                      
+.contNav--coberturas{grid-area: coberturas;}
+                      
+.contNav--acercaDe{grid-area: acercade;     
+    text-decoration: none;
+    justify-self: end;
+    font-size: smaller;
+    font-weight: bolder;
+    align-self: center;}    
+
+}
+
+@media only screen and (min-width: 1024px){
+
+.gridPadre {display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 6% auto auto 9%;
+    grid-template-areas:
+    "nav nav nav nav nav"
+    "log log log log log"
+    "yo yo yo yo yo"
+    "pie pie pie pie pie"; }
+      
+.gridPadre nav.container-fluid{grid-area: nav;}
+      
+.gridPadre .encabezado {grid-area: log;}
+      
+.gridPadre .informacion{grid-area: yo;}
+      
+.gridPadre .pieDepagina{grid-area: pie;}
+    
+        
+.contNav {display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px 120px ;
+    grid-template-rows: 50px;
+    grid-template-areas: "inicio info compañias contactanos coberturas  no  acercade";
+    font-style: italic;
+    list-style-type: none;
+    text-decoration: none;
+    jUstify-items: start;
+    align-items: center;}
+
+.contNav #incio{grid-area: inicio;
+    text-decoration: none;}
+            
+.contNav #info{grid-area: info;text-decoration: none}
+            
+.contNav #compa{grid-area: compañias;text-decoration: none}
+            
+.contNav #contactanos{grid-area: contactanos;text-decoration: none}
+            
+.contNav #coberturas{grid-area: coberturas;text-decoration: none}
+            
+.contNav #acercaDe{grid-area: acercade;
+    text-decoration: none;
+    justify-self: end;
+    font-size: smaller;
+    font-weight: bolder;
+    align-self: center;}    
+
+.gridForm {display: grid;
+    grid-template-rows: 9%  12% auto 7%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "nav nav"
+    "tituform tituform"
+    "formu log"
+    "pie pie";} 
+  
+.formulario {grid-area: formu;}
+  
+.imagenesContacto  
+    {grid-area: log;
+    justify-self: center;
+    align-self: center;} 
+  
+.tituloForm {grid-area: tituform;}
+
+.pieDepagina{grid-area: pie;}
+}
+
+@media only screen and (min-width: 1440px){
+    
+.gridPadre {display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 5.5% auto auto 9%;
+    grid-template-areas:
+    "nav nav nav nav nav"
+     "log log log log log"
+     "yo yo yo yo yo"
+     "pie pie pie pie pie"; }
+
+
+.gridForm {display: grid;
+    grid-template-rows: 9%  12% auto 7%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "nav nav"
+    "tituform tituform"
+    "formu log"
+    "pie pie";} 
+
+nav.container-fluid {grid-area: nav;}
+
+
+}

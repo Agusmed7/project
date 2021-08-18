@@ -1,0 +1,8 @@
+p.pieDepagina__redes {@if $redes == 1161871927 {background-color: green;} 
+
+@else if $redes == FACEBOOKJLASEGUROS {background-color: rgb(250, 17, 17);}
+
+@else if $redes == javierarenasegurosgmailcom {background-color:red;}
+
+@else if $redes == INSTAGRAMJLASEGUROS {background-color: rgba(202, 202, 0, 0.973);}
+}
