@@ -441,11 +441,6 @@ ul.contNav {
 .imagenesContacto {
   margin-bottom: 1rem; }
 
-.imagenenesContacto__carrusel {
-  height: 30rem;
-  width: 30rem !important;
-  margin-left: 9rem; }
-
 .container.contenedorCompa .card {
   margin-top: 1rem;
   width: 18rem;
@@ -512,7 +507,11 @@ ul.contNav {
     font-size: 1.5rem;
     font-weight: 900; }
   .imagenesContacto {
-    margin-bottom: 0%; } }
+    margin-bottom: 0%; }
+  .imagenenesContacto__carrusel {
+    height: 30rem;
+    width: 30rem !important;
+    margin-left: 9rem; } }
 
 @media only screen and (min-width: 1440px) {
   ul.contNav {
