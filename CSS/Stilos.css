@@ -32,7 +32,7 @@
   .gridPadre {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-rows: 7% auto auto auto 7%;
+    grid-template-rows: auto auto auto auto 7%;
     grid-template-areas: "nav nav" "logo logo" "yo yo" "yo yo" "pie pie"; }
   .gridPadre nav.container-fluid {
     grid-area: nav; }
@@ -72,7 +72,7 @@
   .gridPadre {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 6% auto auto 9%;
+    grid-template-rows: auto auto auto 9%;
     grid-template-areas: "nav nav nav nav nav" "log log log log log" "yo yo yo yo yo" "pie pie pie pie pie"; }
   .gridPadre nav.container-fluid {
     grid-area: nav; }
@@ -167,6 +167,14 @@ h2 {
   align-self: center;
   justify-self: center; }
 
+.card.mb-3.informacion.container {
+  justify-self: center; }
+
+.col-md-4.container {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
 /* ACA COMIENZA PARA TABLETS */
 @media only screen and (min-width: 768px) {
   .informacion {
@@ -194,78 +202,132 @@ h2 {
     flex-wrap: wrap;
     align-content: space-evenly; } }
 
+@media only screen and (min-width: 1024px) {
+  .contenedorVida {
+    display: flex;
+    flex-direction: column; }
+  .card.mb-3 {
+    display: flex;
+    justify-self: center;
+    align-self: center; } }
+
 body {
-  background-color: #c2c3c9; }
+  background-color: #232443; }
 
 nav footer {
-  background-color: #232443; }
+  background-color: #000000; }
 
 #borrar {
-  background-color: #232443; }
+  background-color: #000000; }
 
 .contNav {
-  color: bisque;
   border: lightsteelblue;
-  background-color: #232443; }
+  background-color: #000000; }
 
 .contNav__li a {
-  color: white; }
+  color: #3237ad; }
 
 .contNav__li a:hover {
-  background-color: #111; }
+  background-color: #c29127;
+  border-radius: 70%; }
 
 .contNav--acercaDe {
-  background-color: #4CAF50; }
+  background-color: #c29127;
+  color: white; }
 
 .contNav .contNav__men {
-  color: white;
-  background-color: #232443; }
+  color: #3237ad;
+  background-color: #000000; }
 
 .contNav .contNav__men .contNav__men--cat {
-  background-color: #232443; }
+  background-color: #000000;
+  color: white; }
 
 .contNav .contNav__li:hover .contNav__men {
-  background-color: #232443; }
+  color: white;
+  background-color: #000000; }
 
 .informacion {
-  background-color: #c2c3c9; }
+  background-color: #232443; }
+
+.card.mb-3.informacion.container {
+  border-color: #c29127; }
 
 .pieDepagina {
-  background-color: #232443; }
+  background-color: #000000;
+  color: #3237ad; }
 
 .container.contenedorCompa .card {
   background-color: bisque; }
 
 .gridPadre {
-  background-color: #c2c3c9; }
-
-.gridPadre .encabezado {
-  background-color: black; }
+  background-color: #232443; }
 
 .gridPadre .informacion {
-  background-color: #c2c3c9;
+  background-color: #232443;
   color: white; }
 
 .gridPadre .pieDepagina {
-  background-color: #232443; }
+  background-color: #000000; }
 
 .contNav {
-  background-color: #232443;
+  background-color: #000000;
   color: bisque;
   border: lightsteelblue; }
 
 .contNav #acercaDe {
-  background-color: green; }
+  background-color: #c29127; }
 
 .formulario {
   color: #26083b;
-  background-color: #c2c3c9; }
+  background-color: #232443; }
 
 .tituloForm {
-  background-color: #c2c3c9; }
+  background-color: #232443;
+  color: white; }
 
 h3 {
   color: black; }
+
+h2 {
+  color: white; }
+
+.card.mb-3 {
+  background-color: #232443;
+  color: white;
+  border-color: #c29127; }
+
+.card.mb-3 {
+  border-color: #c29127; }
+
+.contenedor__Titulos {
+  color: white; }
+
+.informacion__titulo {
+  color: white; }
+
+.contenedor__subtitulos {
+  color: white; }
+
+.compa__titulos {
+  color: white; }
+
+.container.contenedorCompa .card {
+  background-color: #232443;
+  border-color: #c29127; }
+
+.compa__textos {
+  color: white; }
+
+h5.card-title {
+  color: white; }
+
+.form-label {
+  color: white; }
+
+.btn-primary {
+  background-color: #c29127;
+  color: white; }
 
 body {
   margin: 0;
@@ -312,14 +374,29 @@ ul.contNav {
 .encabezado {
   width: 100%; }
 
-.col-md-4 {
-  width: 328px; }
+.encabezado__image.img-fluid.container-fluid {
+  padding: 0%; }
 
 .card.mb-3.informacion.container {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  padding: 0%; }
+
+.card-body {
+  padding: 0.5rem 0.5rem;
+  padding-right: 0%; }
+
+.col-md-4.container {
+  display: flex;
+  align-content: center; }
 
 .informacion {
   margin: 0%; }
+
+.informacion_foto {
+  border-radius: 70%; }
+
+.container-fluid.pieDepagina {
+  padding: 0%; }
 
 .pieDepagina {
   margin: 0; }
@@ -377,10 +454,31 @@ ul.contNav {
     margin-left: auto;
     margin-right: auto;
     width: 100%; }
+  .card.mb-3.informacion.container {
+    width: 120rem; }
+  .informacion__texto {
+    font-size: 1.3rem; }
+  .informacion__titulo {
+    font-size: 3rem;
+    font-weight: bold; }
   .formulario {
     margin-right: 0%; }
   .tituloForm {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  .card.mb-3 {
+    width: 50rem;
+    font-size: 1.5rem; }
+  h5.card-title {
+    font-size: 2rem;
+    font-weight: bold; }
+  h2 {
+    font-size: 5rem; }
+  .contenedor__Titulos {
+    font-size: 3rem;
+    font-weight: bold; }
+  .contenedor__subtitulos {
+    font-size: 1.5rem;
+    font-weight: 900; } }
 
 @media only screen and (min-width: 1440px) {
   ul.contNav {
@@ -406,6 +504,10 @@ h1 {
 
 .formulario {
   animation-duration: 3s;
+  animation-name: aparecer; }
+
+.informacion {
+  animation-duration: 5s;
   animation-name: aparecer; }
 
 @media only screen and (min-width: 768px) {

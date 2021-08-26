@@ -36,13 +36,21 @@ padding: 0%;}
     
 .encabezado { width: 100%;}
 
-.col-md-4{width: 328px;}
+.encabezado__image.img-fluid.container-fluid{padding: 0%;}
 
-.card.mb-3.informacion.container {margin-top:1rem;}
+.card.mb-3.informacion.container {margin-top:1rem;
+padding: 0%;}
+
+.card-body {padding: 0.5rem 0.5rem;padding-right: 0%;}
+
+.col-md-4.container{display: flex;
+align-content: center;}
     
 .informacion{margin: 0%;}
 
+.informacion_foto{border-radius: 70%;}
 
+.container-fluid.pieDepagina{padding: 0%;}
 
 .pieDepagina {margin: 0;}
     
@@ -59,6 +67,7 @@ padding: 0%;}
     margin-top: 1rem;
     width: 18rem;
     margin-bottom: 1rem;}
+
 
 
 
@@ -99,20 +108,33 @@ margin-bottom: 1rem;}
     margin-bottom: 0%;
     width: 100%;}
         
-
-
-
-            
 .contNav {margin-left: auto;
     margin-right: auto;
     width: 100%;}
+
+.card.mb-3.informacion.container{width: 120rem;}
+
+.informacion__texto{font-size: 1.3rem;}
+    
+.informacion__titulo{font-size: 3rem; font-weight: bold;}
 
 .formulario{margin-right: 0%;}
 
 .tituloForm {font-size: 4rem;}
 
+.card.mb-3{width: 50rem;
+    font-size: 1.5rem;}
 
+h5.card-title{font-size: 2rem;
+    font-weight: bold;}
 
+h2{font-size: 5rem;}
+
+.contenedor__Titulos{font-size: 3rem;
+    font-weight: bold;}
+
+.contenedor__subtitulos{font-size: 1.5rem;
+font-weight:900;}    
 }
 
 

@@ -17,6 +17,13 @@ h2{display: flex;
     align-self: center;
     justify-self: center;}
 
+.card.mb-3.informacion.container{justify-self: center;}
+
+.col-md-4.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;}
+
 /* ACA COMIENZA PARA TABLETS */
 
 @media only screen and (min-width: 768px){
@@ -46,6 +53,23 @@ h2  {display: flex;
         
 .container.contenedorCompa .card{flex-wrap: wrap;
     align-content: space-evenly;}
+
+
+}
+@media only screen and (min-width: 1024px){
+
+
+.contenedorVida{display: flex;
+flex-direction: column;}
+
+.card.mb-3{display: flex;
+    justify-self: center;
+    align-self: center;}
+
+
+
+
+
 
 
 }
