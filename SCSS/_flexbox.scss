@@ -24,7 +24,20 @@ h2{display: flex;
     justify-content: center;
     align-content: center;}
 
-/* ACA COMIENZA PARA TABLETS */
+.pieDepagina{display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.pieDepagina__medios{margin-top: 1rem;}
+
+.juridical-logos{margin-top: 1rem;}
+
+
+
+
+
+
+    /* ACA COMIENZA PARA TABLETS */
 
 @media only screen and (min-width: 768px){
 
@@ -54,6 +67,14 @@ h2  {display: flex;
 .container.contenedorCompa .card{flex-wrap: wrap;
     align-content: space-evenly;}
 
+.pieDepagina{display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;}
+    
+.pieDepagina__medios{align-self: center;}
+    
+.juridical-logos{align-self: center;}
 
 }
 @media only screen and (min-width: 1024px){

@@ -116,11 +116,13 @@
     align-self: center; }
   .gridForm {
     display: grid;
-    grid-template-rows: 9%  12% auto 7%;
+    grid-template-rows: 9%  12% auto auto;
     grid-template-columns: 50% 50%;
     grid-template-areas: "nav nav" "tituform tituform" "formu log" "pie pie"; }
   .formulario {
     grid-area: formu; }
+  nav.container-fluid {
+    grid-area: nav; }
   .imagenesContacto {
     grid-area: log;
     justify-self: center;
@@ -175,6 +177,17 @@ h2 {
   justify-content: center;
   align-content: center; }
 
+.pieDepagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.pieDepagina__medios {
+  margin-top: 1rem; }
+
+.juridical-logos {
+  margin-top: 1rem; }
+
 /* ACA COMIENZA PARA TABLETS */
 @media only screen and (min-width: 768px) {
   .informacion {
@@ -200,7 +213,16 @@ h2 {
     align-content: space-evenly; }
   .container.contenedorCompa .card {
     flex-wrap: wrap;
-    align-content: space-evenly; } }
+    align-content: space-evenly; }
+  .pieDepagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center; }
+  .pieDepagina__medios {
+    align-self: center; }
+  .juridical-logos {
+    align-self: center; } }
 
 @media only screen and (min-width: 1024px) {
   .contenedorVida {
@@ -225,7 +247,7 @@ nav footer {
   background-color: #000000; }
 
 .contNav__li a {
-  color: #3237ad; }
+  color: white; }
 
 .contNav__li a:hover {
   background-color: #c29127;
@@ -393,7 +415,7 @@ ul.contNav {
   margin: 0%; }
 
 .informacion_foto {
-  border-radius: 70%; }
+  height: 22rem; }
 
 .container-fluid.pieDepagina {
   padding: 0%; }
@@ -401,8 +423,13 @@ ul.contNav {
 .pieDepagina {
   margin: 0; }
 
-.pieDepagina__autor {
-  margin: 0%; }
+.pieDepagina__redes {
+  width: 2rem;
+  height: 2rem; }
+
+.pieDepagina__medios {
+  list-style: none;
+  display: inline-flex; }
 
 .formulario {
   margin-bottom: 1rem; }
@@ -413,6 +440,11 @@ ul.contNav {
 
 .imagenesContacto {
   margin-bottom: 1rem; }
+
+.imagenenesContacto__carrusel {
+  height: 30rem;
+  width: 30rem !important;
+  margin-left: 9rem; }
 
 .container.contenedorCompa .card {
   margin-top: 1rem;
@@ -478,7 +510,9 @@ ul.contNav {
     font-weight: bold; }
   .contenedor__subtitulos {
     font-size: 1.5rem;
-    font-weight: 900; } }
+    font-weight: 900; }
+  .imagenesContacto {
+    margin-bottom: 0%; } }
 
 @media only screen and (min-width: 1440px) {
   ul.contNav {

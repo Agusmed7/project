@@ -48,13 +48,17 @@ align-content: center;}
     
 .informacion{margin: 0%;}
 
-.informacion_foto{border-radius: 70%;}
+.informacion_foto{height: 22rem;}
 
 .container-fluid.pieDepagina{padding: 0%;}
 
 .pieDepagina {margin: 0;}
-    
-.pieDepagina__autor{margin: 0%;}
+
+.pieDepagina__redes{width: 2rem;
+    height: 2rem;}
+
+.pieDepagina__medios{list-style: none;
+    display: inline-flex;}
 
 .formulario{margin-bottom: 1rem;} 
 
@@ -62,6 +66,10 @@ align-content: center;}
     margin-bottom: 1rem;}
 
 .imagenesContacto{margin-bottom: 1rem;}
+
+.imagenenesContacto__carrusel{ height: 30rem;
+    width: 30rem !important;
+    margin-left: 9rem;}
 
 .container.contenedorCompa .card{
     margin-top: 1rem;
@@ -135,6 +143,9 @@ h2{font-size: 5rem;}
 
 .contenedor__subtitulos{font-size: 1.5rem;
 font-weight:900;}    
+
+.imagenesContacto{margin-bottom: 0%;}
+
 }
 
 

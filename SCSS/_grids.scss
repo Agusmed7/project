@@ -120,7 +120,7 @@
     align-self: center;}    
 
 .gridForm {display: grid;
-    grid-template-rows: 9%  12% auto 7%;
+    grid-template-rows: 9%  12% auto auto;
     grid-template-columns: 50% 50%;
     grid-template-areas:
     "nav nav"
@@ -129,6 +129,8 @@
     "pie pie";} 
   
 .formulario {grid-area: formu;}
+
+nav.container-fluid {grid-area: nav;}
   
 .imagenesContacto  
     {grid-area: log;
