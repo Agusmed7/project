@@ -14,63 +14,111 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
 </head>
 
-<body class="gridPadre">
+<body>
+	<div class="gridPadre">
+		
+		<!-- NAVEGADOR -->
 
-	<!-- NAVEGADOR -->
+		<nav class="container-fluid">
+			<ul class="contNav ">
+				<div class="contNav--inicio"><li class="contNav__li"><a href="index.html">Inicio</a></li></div>
+				<div class="contNav--info"><li class="contNav__li"><a href=#>Info</a>
+					<ul class="dropdown-menu contNav__men">
+						<li class="contNav__men--cat"><a class="dropdown-item" href="html/vidaMedici.html">Vida y ahorro</a></li>
+						<li class="contNav__men--cat"><a class="dropdown-item" href="html/patrimonialesMedici.html">Patrimoniales</a></li>
+					</ul>
+				</li></div>
+				<div class="contNav--compa"><li class="contNav__li"><a href="html/companiasMedici.html">Compañias</a></li></div>
+				<div class="contNav--contactanos"><li class="contNav__li"><a href="html/contactanosMedici.html">Contacto</a></li></div>  
+				<div class="contNav--acercaDe"><li class="contNav__li"><a class="active" href="index.html#sobreMi">Sobre mi</a></li></div>
+			</ul>
+		</nav>
 
-    <nav class="container-fluid">
-		<ul class="contNav ">
-			<div class="contNav--inicio"><li class="contNav__li"><a href="index.html">INICIO</a></li></div>
-			<div class="contNav--info"><li class="contNav__li"><a href=#>INFO</a>
-								<ul class="dropdown-menu contNav__men">
-									<li class="contNav__men--cat"><a class="dropdown-item" href="html/VIDAMEDICI.html">VIDA Y AHORRO</a></li>
-									<li class="contNav__men--cat"><a class="dropdown-item" href="html/PATRIMONIALES.html">PATRIMONIALES</a></li>
-								</ul>
-							</li></div>
-			<div class="contNav--compa"><li class="contNav__li"><a href="html/companias.html">COMPAÑIAS</a></li></div>
-			<div class="contNav--contactanos"><li class="contNav__li"><a href="html/CONTACTANOSMEDICI.html">CONTACTO</a></li></div>  
-			<div class="contNav--acercaDe"><li class="contNav__li"><a class="active" href=".informacion">ABOUT ME</a></li></div>
-		</ul>
-	</nav>
-
-	<header class="encabezado">
-		<img class="encabezado__image img-fluid container-fluid" src="IMG/logonuevo.jpg" alt="escritorio">
-	</header>
-
-<!-- CONTENIDO PRINCIPAL -->
-
-	<div class="card mb-3 informacion container">
-		<div class="row g-0">
-		  <div class="col-md-4 container">
-			<img class="img-fluid informacion_foto" src="IMG/Javier.png" alt="JAVIER ARENA">
-		  </div>
-		  <div class="col-md-8">
-			<div class="card-body container">
-				<h3 class="informacion__titulo">
-					Hola!
-				  </h3>
-			  <p class="informacion__texto">Soy Javier Arena, tengo 31 años, nací en la Ciudad Autónoma de Buenos Aires, y soy padre de una hermosa preadolescente, la cual me dio muchísimas enseñas en mi vida. Al ser padre desde joven entendí que se debe enseñar con el ejemplo, y siendo responsable de nuestra vida, para poder disfrutarla al máximo. Desde que egresé del colegio secundario trabajé en grandes empresas nacionales, en el sector técnico-mecánico, capacitándome, y desarrollando siempre buenas relaciones interpersonales, me gustaba mucho generar buenos y duraderos vínculos personales, los cuales sigo teniendo en la actualidad con excolegas. Es así que, llegada la oportunidad de emprender en el mundo de los seguros, no dudé de mis aptitudes para poder entender y empatizar con cada uno de mis clientes.</p>
+		<nav class="navbar navbar-light fixed-top">
+			<div class="container-fluid">
+			<a class="navbar-brand" href="#">JLA SEGUROS</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Javier Arena Seguros</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<hr>
+				<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Info
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+						<li><a class="dropdown-item" href="html/patrimonialesMedici.html">Patrimoniales</a></li>
+						<li><a class="dropdown-item" href="html/vidaMedici.html">Vida y ahorro</a></li>
+					</ul>
+					<li class="nav-item">
+						<a class="nav-link" href="html/companiasMedici.html">Compañias</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="html/contactanosMedici.html">Contactanos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#sobreMi">Sobre mi</a>
+					</li>
+					</li>
+				</ul>
+				<ul id="redesNav" class="pieDepagina__medios">
+					<li class="ms-3"><a href="https://wa.me/message/L66M32KYA54JE1"><img class="pieDepagina__redes" src="IMG/whatsapp.png" alt=""></a></li>
+					<li class="ms-3"><a href="https://www.instagram.com/javierarenaseguros/"><img class="pieDepagina__redes" src="IMG/instagram.png" alt=""></a></li>
+					<li class="ms-3"><a href="https://www.facebook.com/Javier-Arena-100624668876414"><img class="pieDepagina__redes" src="IMG/facebook.png" alt=""></a></li>
+					<li class="ms-3"><a href="https://www.linkedin.com/in/javier-arena-985b0091/"><img class="pieDepagina__redes" src="IMG/linkedin.png" alt=""></a></li>
+				</ul>
+				</div>
 			</div>
-		  </div>
-		</div>
-	</div>
-	
-	
-	<!-- PIE DE PAGINA -->
+			</div>
+		</nav>
 
-	<footer class="pieDepagina container-fluid">
-		<div class="col-md-4">
-		  <span class="text-muted">© Agustin Medici 2021 Javier Arena Seguros, Inc</span>
-		</div>
-		<div class="juridical-logos"><img src="https://s3-us-west-2.amazonaws.com/123.chile-imgs/companies/logos/logo_SSN.svg" alt="Superintendencia de seguros de la Nación"></div>
-		<ul class="pieDepagina__medios">
-			<li class="ms-3"><a href="https://wa.me/message/L66M32KYA54JE1"><img class="pieDepagina__redes" src="IMG/whatsapp.png" alt=""></a></li>
-			<li class="ms-3"><a href="https://www.instagram.com/javierarenaseguros/"><img class="pieDepagina__redes" src="IMG/instagram.png" alt=""></a></li>
-			<li class="ms-3"><a href="https://www.facebook.com/Javier-Arena-100624668876414"><img class="pieDepagina__redes" src="IMG/facebook.png" alt=""></a></li>
-			<li class="ms-3"><a href="https://www.linkedin.com/in/javier-arena-985b0091/"><img class="pieDepagina__redes" src="IMG/linkedin.png" alt=""></a></li>
-		</ul>
-	</footer>
+		<header class="encabezado">
+			<img class="encabezado__image img-fluid container-fluid" src="IMG/logonuevo.jpg" alt="escritorio">
+		</header>
 
+	<!-- CONTENIDO PRINCIPAL -->
+
+		<div id="sobreMi" class="card mb-3 informacion container">
+			<div class="row g-0">
+			<div class="col-md-4 container">
+				<img class="img-fluid informacion_foto" src="IMG/Javier.png" alt="JAVIER ARENA">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body container">
+					<h3 class="informacion__titulo">
+						Hola!
+					</h3>
+				<p class="informacion__texto">Soy Javier Arena, tengo 31 años, nací en la Ciudad Autónoma de Buenos Aires, y soy padre de una hermosa preadolescente, la cual me dio muchísimas enseñas en mi vida. Al ser padre desde joven entendí que se debe enseñar con el ejemplo, y siendo responsable de nuestra vida, para poder disfrutarla al máximo. Asi comencé este camino de asesorar e instruir a mis clientes para mejorar y cuidar su patrimonio.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		
+		<!-- PIE DE PAGINA -->
+
+		<footer class="pieDepagina container-fluid">
+			<div class="">
+			<span class="text-muted">© Agustin Medici 2021 Javier Arena Seguros, Inc</span>
+			</div>
+			<div class="juridical-logos"><img id="ssnLogo" src="IMG/pieSsn.png" alt="Superintendencia de seguros de la Nación"></div>
+			<ul class="pieDepagina__medios">
+				<li class="ms-3"><a href="https://wa.me/message/L66M32KYA54JE1"><img class="pieDepagina__redes" src="IMG/whatsapp.png" alt=""></a></li>
+				<li class="ms-3"><a href="https://www.instagram.com/javierarenaseguros/"><img class="pieDepagina__redes" src="IMG/instagram.png" alt=""></a></li>
+				<li class="ms-3"><a href="https://www.facebook.com/Javier-Arena-100624668876414"><img class="pieDepagina__redes" src="IMG/facebook.png" alt=""></a></li>
+				<li class="ms-3"><a href="https://www.linkedin.com/in/javier-arena-985b0091/"><img class="pieDepagina__redes" src="IMG/linkedin.png" alt=""></a></li>
+			</ul>
+		</footer>
+	</div>	
 
 
 

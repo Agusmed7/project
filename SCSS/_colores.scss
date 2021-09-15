@@ -4,6 +4,29 @@ nav footer {background-color: $pieynav;}
 
 #borrar{background-color: $pieynav;}
 
+.navbar{background-color: $pieynav;
+    color: white;}
+    
+.navbar-light .navbar-brand {
+    color:white}
+
+.navbar-light .navbar-toggler-icon{background-image: url(../IMG/menuDorado.png);
+    background-color: $pieynav;}
+
+.offcanvas {background-color: $pieynav;}
+
+.offcanvas-body ul.navbar-nav.justify-content-end.flex-grow-1.pe-3 li a{color: white;}
+
+.dropdown-menu.show{background-color: $pieynav;}
+
+.offcanvas-header .btn-close{background-color: $bordes;}
+
+hr{background-color: $bordes;}
+
+#button-acercaDemi{background-color: $bordes;
+    width: 7rem;
+    border-radius: 5%;}
+
 .contNav {
     border:lightsteelblue;
     background-color: $pieynav}

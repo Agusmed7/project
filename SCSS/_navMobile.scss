@@ -1,0 +1,19 @@
+nav.container-fluid{display: none;}
+
+.fixed-top {
+   position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+@media only screen and (min-width: 768px){
+
+.navbar{display: none;}
+
+nav.container-fluid{display: grid;}
+
+
+}
+

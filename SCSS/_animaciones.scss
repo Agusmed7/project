@@ -17,9 +17,11 @@ h1 {animation-duration: 5s;
 .informacion{animation-duration: 5s;
     animation-name: aparecer}
 
+#redesNav{transform: translate(50px, 200px);}
+
 @media only screen and (min-width: 768px) {
 
-    .container.contenedorCompa .card:hover {transform: scale(1.2,1.2);}    
+.container.contenedorCompa .card:hover {transform: scale(1.2,1.2);}    
 
 .contNav--acercaDe {transform: translate(-15px);} 
 

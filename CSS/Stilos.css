@@ -32,7 +32,7 @@
   .gridPadre {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-rows: auto auto auto auto 7%;
+    grid-template-rows: auto auto auto auto 10%;
     grid-template-areas: "nav nav" "logo logo" "yo yo" "yo yo" "pie pie"; }
   .gridPadre nav.container-fluid {
     grid-area: nav; }
@@ -116,7 +116,7 @@
     align-self: center; }
   .gridForm {
     display: grid;
-    grid-template-rows: 9%  12% auto auto;
+    grid-template-rows: auto 12% auto auto;
     grid-template-columns: 50% 50%;
     grid-template-areas: "nav nav" "tituform tituform" "formu log" "pie pie"; }
   .formulario {
@@ -140,7 +140,7 @@
     grid-template-areas: "nav nav nav nav nav" "log log log log log" "yo yo yo yo yo" "pie pie pie pie pie"; }
   .gridForm {
     display: grid;
-    grid-template-rows: 9%  12% auto 7%;
+    grid-template-rows: 7% 12% auto 11%;
     grid-template-columns: 50% 50%;
     grid-template-areas: "nav nav" "tituform tituform" "formu log" "pie pie"; }
   nav.container-fluid {
@@ -241,6 +241,37 @@ nav footer {
 
 #borrar {
   background-color: #000000; }
+
+.navbar {
+  background-color: #000000;
+  color: white; }
+
+.navbar-light .navbar-brand {
+  color: white; }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../IMG/menuDorado.png);
+  background-color: #000000; }
+
+.offcanvas {
+  background-color: #000000; }
+
+.offcanvas-body ul.navbar-nav.justify-content-end.flex-grow-1.pe-3 li a {
+  color: white; }
+
+.dropdown-menu.show {
+  background-color: #000000; }
+
+.offcanvas-header .btn-close {
+  background-color: #c29127; }
+
+hr {
+  background-color: #c29127; }
+
+#button-acercaDemi {
+  background-color: #c29127;
+  width: 7rem;
+  border-radius: 5%; }
 
 .contNav {
   border: lightsteelblue;
@@ -415,13 +446,17 @@ ul.contNav {
   margin: 0%; }
 
 .informacion_foto {
-  height: 22rem; }
+  height: 15rem; }
 
 .container-fluid.pieDepagina {
   padding: 0%; }
 
 .pieDepagina {
   margin: 0; }
+
+#ssnLogo {
+  width: 20rem;
+  height: 6rem; }
 
 .pieDepagina__redes {
   width: 2rem;
@@ -446,6 +481,9 @@ ul.contNav {
   width: 18rem;
   margin-bottom: 1rem; }
 
+hr {
+  margin: 0; }
+
 @media only screen and (min-width: 768px) {
   .formulario {
     margin-left: 0.5rem; }
@@ -464,6 +502,9 @@ ul.contNav {
     flex-wrap: nowrap; }
   .gridPadre .pieDepagina {
     width: 100%; }
+  #ssnLogo {
+    width: 20rem;
+    height: 4rem; }
   .contNav {
     width: 100%;
     padding: 0%; } }
@@ -490,7 +531,7 @@ ul.contNav {
     font-weight: bold; }
   .formulario {
     margin-right: 0%; }
-  .tituloForm {
+  h1 {
     font-size: 4rem; }
   .card.mb-3 {
     width: 50rem;
@@ -511,7 +552,10 @@ ul.contNav {
   .imagenenesContacto__carrusel {
     height: 30rem;
     width: 30rem !important;
-    margin-left: 9rem; } }
+    margin-left: 9rem; }
+  #ssnLogo {
+    width: 30rem;
+    height: 6rem; } }
 
 @media only screen and (min-width: 1440px) {
   ul.contNav {
@@ -543,6 +587,9 @@ h1 {
   animation-duration: 5s;
   animation-name: aparecer; }
 
+#redesNav {
+  transform: translate(50px, 200px); }
+
 @media only screen and (min-width: 768px) {
   .container.contenedorCompa .card:hover {
     transform: scale(1.2, 1.2); }
@@ -553,20 +600,21 @@ h1 {
   .contNav--acercaDe {
     transform: translate(400px); } }
 
-p.pieDepagina__redes {
-  background-color: #fa1111; }
+nav.container-fluid {
+  display: none; }
 
-.pieDepagina__redes-1 {
-  width: 100rem; }
+.fixed-top {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
 
-.pieDepagina__redes-2 {
-  width: 50rem; }
-
-.pieDepagina__redes-3 {
-  width: 33.33333rem; }
-
-.pieDepagina__redes-4 {
-  width: 25rem; }
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: none; }
+  nav.container-fluid {
+    display: grid; } }
 
 * {
   padding: 0;

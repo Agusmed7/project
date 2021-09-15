@@ -14,64 +14,111 @@
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
 	</head>
 
-<body class="vidaGrid">
-
+<body>
+	
 	<!-- NAVEGADOR -->
 
 	<nav class="container-fluid">
 		<ul class="contNav ">
-			<div class="contNav--inicio"><li class="contNav__li"><a href="../index.html">INICIO</a></li></div>
-			<div class="contNav--info"><li class="contNav__li"><a href=#>INFO</a>
-								<ul class="dropdown-menu contNav__men">
-									<li class="contNav__men--cat"><a class="dropdown-item" href="../html/VIDAMEDICI.html">VIDA Y AHORRO</a></li>
-									<li class="contNav__men--cat"><a class="dropdown-item" href="../html/PATRIMONIALES.html">PATRIMONIALES</a></li>
-								</ul>
-							</li></div>
-			<div class="contNav--compa"><li class="contNav__li"><a href="../html/companias.html">COMPAÑIAS</a></li></div>
-			<div class="contNav--contactanos"><li class="contNav__li"><a href="../html/CONTACTANOSMEDICI.html">CONTACTO</a></li></div>  
-			<div class="contNav--acercaDe"><li class="contNav__li"><a class="active" href=".informacion">ABOUT ME</a></li></div>
+			<div class="contNav--inicio"><li class="contNav__li"><a href="../index.html">Inicio</a></li></div>
+			<div class="contNav--info"><li class="contNav__li"><a href=#>Info</a>
+				<ul class="dropdown-menu contNav__men">
+					<li class="contNav__men--cat"><a class="dropdown-item" href="vidaMedici.html">Vida y ahorro</a></li>
+					<li class="contNav__men--cat"><a class="dropdown-item" href="patrimonialesMedici.html">Patrimoniales</a></li>
+				</ul>
+			</li></div>
+			<div class="contNav--compa"><li class="contNav__li"><a href="companiasMedici.html">Compañias</a></li></div>
+			<div class="contNav--contactanos"><li class="contNav__li"><a href="contactanosMedici.html">Contacto</a></li></div>  
+			<div class="contNav--acercaDe"><li class="contNav__li"><a class="active" href="../index.html#sobreMi">Sobre mi</a></li></div>
 		</ul>
 	</nav>
 
-
-<!-- CONTENIDO PRINCIPAL -->
-
-	<h2>NEGOCIOS</h2>
-
-	<div class="container contenedorVida animate__animated animate__backInDown">
-		<div class="card mb-3">
-		  <div class="card-body">
-			<h5 class="card-title">SEGUROS DE VIDA</h5>
-			<p class="card-text">Funciona como una protección para
-				alguien que dependa económicamente de vos en caso de fallecimiento y te la tranquilidad de saber que frente a una fatalidad, tus seres queridos
-				están cubiertos en cuanto a lo económico.</p>
-		  </div>
-		</div>
-		<div class="card mb-3">
-			<div class="card-body">
-			  <h5 class="card-title">SEGUROS DE AHORRO</h5>
-			  <p class="card-text">Consiste en separar un capital para que el día de mañana puedas cumplir con algún objetivo
-				económico. Tradicionalmente es una herramienta que funciona para construir un capital paralelo a tu jubilación, puede aplicarse también por ejemplo a la compra de una casa, la planificación escolar para hijos o nietos, etc. 
-				Es una herramienta que te permite sistematizar tu ahorro para cumplir grandes objetivos económicos al largo plazo.</p>
+		<nav class="navbar navbar-light fixed-top">
+			<div class="container-fluid">
+			<a class="navbar-brand" href="#">JLA SEGUROS</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Javier Arena Seguros</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<hr>
+				<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+					</li>
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Info
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+						<li><a class="dropdown-item" href="patrimonialesMedici.html">Patrimoniales</a></li>
+						<li><a class="dropdown-item" href="vidaMedici.html">Vida y ahorro</a></li>
+					</ul>
+					<li class="nav-item">
+						<a class="nav-link" href="companiasMedici.html">Compañias</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contactanosMedici.html">Contactanos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="button-acercaDemi" href="../index.html#sobreMi">Sobre mi</a>
+					</li>
+					</li>
+				</ul>
+				<ul id="redesNav" class="pieDepagina__medios">
+					<li class="ms-3"><a href="https://wa.me/message/L66M32KYA54JE1"><img class="pieDepagina__redes" src="../IMG/whatsapp.png" alt=""></a></li>
+					<li class="ms-3"><a href="https://www.instagram.com/javierarenaseguros/"><img class="pieDepagina__redes" src="../IMG/instagram.png" alt=""></a></li>
+					<li class="ms-3"><a href="https://www.facebook.com/Javier-Arena-100624668876414"><img class="pieDepagina__redes" src="../IMG/facebook.png" alt=""></a></li>
+					<li class="ms-3"><a href="https://www.linkedin.com/in/javier-arena-985b0091/"><img class="pieDepagina__redes" src="../IMG/linkedin.png" alt=""></a></li>
+				</ul>
+				</div>
 			</div>
-		  </div>
-	</div>
+			</div>
+		</nav>
 
-	<!-- PIE DE PAGINA -->
 
-	<footer class="pieDepagina container-fluid">
-		<div class="col-md-4 d-flex align-items-center">
-		  <span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© Agustin Medici 2021 Javier Arena Seguros, Inc</font></font></span>
+		<!-- CONTENIDO PRINCIPAL -->
+
+		<header><h2>NEGOCIOS</h2></header>
+
+		<div class="container contenedorVida animate__animated animate__backInDown">
+			<div class="card mb-3">
+			<div class="card-body">
+				<h5 class="card-title">SEGUROS DE VIDA</h5>
+				<p class="card-text">Funciona como una protección para
+					alguien que dependa económicamente de vos en caso de fallecimiento y te la tranquilidad de saber que frente a una fatalidad, tus seres queridos
+					están cubiertos en cuanto a lo económico.</p>
+			</div>
+			</div>
+			<div class="card mb-3">
+				<div class="card-body">
+				<h5 class="card-title">SEGUROS DE AHORRO</h5>
+				<p class="card-text">Consiste en separar un capital para que el día de mañana puedas cumplir con algún objetivo
+					económico. Tradicionalmente es una herramienta que funciona para construir un capital paralelo a tu jubilación, puede aplicarse también por ejemplo a la compra de una casa, la planificación escolar para hijos o nietos, etc. 
+					Es una herramienta que te permite sistematizar tu ahorro para cumplir grandes objetivos económicos al largo plazo.</p>
+				</div>
+			</div>
 		</div>
-		<div class="juridical-logos"><img src="https://s3-us-west-2.amazonaws.com/123.chile-imgs/companies/logos/logo_SSN.svg" alt="Superintendencia de seguros de la Nación"></div>
-		<ul class="pieDepagina__medios">
-		  <li class="ms-3"><a href="https://wa.me/message/L66M32KYA54JE1"><img class="pieDepagina__redes" src="../IMG/whatsapp.png" alt=""></a></li>
-		  <li class="ms-3"><a href="https://www.instagram.com/javierarenaseguros/"><img class="pieDepagina__redes" src="../IMG/instagram.png" alt=""></a></li>
-		  <li class="ms-3"><a href="https://www.facebook.com/Javier-Arena-100624668876414"><img class="pieDepagina__redes" src="../IMG/facebook.png" alt=""></a></li>
-		  <li class="ms-3"><a href="https://www.linkedin.com/in/javier-arena-985b0091/"><img class="pieDepagina__redes" src="../IMG/linkedin.png" alt=""></a></li>
-		</ul>
-	</footer>
 
+		<!-- PIE DE PAGINA -->
+
+		<footer class="pieDepagina container-fluid">
+			<div class=" d-flex align-items-center">
+			<span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© Agustin Medici 2021 Javier Arena Seguros, Inc</font></font></span>
+			</div>
+			<div class="juridical-logos"><img id="ssnLogo" src="../IMG/pieSsn.png" alt="Superintendencia de seguros de la Nación"></div>
+			<ul class="pieDepagina__medios">
+			<li class="ms-3"><a href="https://wa.me/message/L66M32KYA54JE1"><img class="pieDepagina__redes" src="../IMG/whatsapp.png" alt=""></a></li>
+			<li class="ms-3"><a href="https://www.instagram.com/javierarenaseguros/"><img class="pieDepagina__redes" src="../IMG/instagram.png" alt=""></a></li>
+			<li class="ms-3"><a href="https://www.facebook.com/Javier-Arena-100624668876414"><img class="pieDepagina__redes" src="../IMG/facebook.png" alt=""></a></li>
+			<li class="ms-3"><a href="https://www.linkedin.com/in/javier-arena-985b0091/"><img class="pieDepagina__redes" src="../IMG/linkedin.png" alt=""></a></li>
+			</ul>
+		</footer>
+	
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
