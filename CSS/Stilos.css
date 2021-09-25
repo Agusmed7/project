@@ -281,8 +281,7 @@ hr {
   color: white; }
 
 .contNav__li a:hover {
-  background-color: #c29127;
-  border-radius: 70%; }
+  background-color: #c29127; }
 
 .contNav--acercaDe {
   background-color: #c29127;
@@ -382,9 +381,12 @@ h5.card-title {
   background-color: #c29127;
   color: white; }
 
+.activo {
+  background-color: #c29127 !important; }
+
 body {
   margin: 0;
-  padding: 0%;
+  padding: 0;
   font-family: Raleway;
   height: 100%;
   width: 100%; }
@@ -397,6 +399,29 @@ nav {
 nav.container-fluid {
   padding: 0;
   margin: 0; }
+
+h2 {
+  margin: 1rem; }
+
+h3 {
+  margin: 1rem; }
+
+.mb-3 {
+  margin: 1rem; }
+
+.card.mb-3 {
+  margin: 1rem;
+  padding: 1rem; }
+
+h1 {
+  margin: 1rem; }
+
+#sobreMi {
+  width: 25rem;
+  padding: 1rem; }
+
+.container.formulario {
+  padding: 0; }
 
 ul.contNav {
   margin: 0;
@@ -452,7 +477,8 @@ ul.contNav {
   padding: 0%; }
 
 .pieDepagina {
-  margin: 0; }
+  margin: 0;
+  padding: 1rem !important; }
 
 #ssnLogo {
   width: 20rem;
@@ -484,9 +510,16 @@ ul.contNav {
 hr {
   margin: 0; }
 
+.col-sm-3 {
+  margin: 1rem; }
+
 @media only screen and (min-width: 768px) {
   .formulario {
     margin-left: 0.5rem; }
+  .card.mb-3 {
+    margin: 3rem; }
+  h1 {
+    margin: 2rem; }
   .btn-primary {
     margin-top: 1rem;
     margin-bottom: 1rem; }
@@ -500,8 +533,11 @@ hr {
     width: 100%; }
   .row {
     flex-wrap: nowrap; }
+  #sobreMi {
+    width: 60rem; }
   .gridPadre .pieDepagina {
-    width: 100%; }
+    width: 100%;
+    padding: 1rem; }
   #ssnLogo {
     width: 20rem;
     height: 4rem; }
@@ -517,7 +553,8 @@ hr {
   .gridPadre .pieDepagina {
     height: 5rem;
     margin-bottom: 0%;
-    width: 100%; }
+    width: 100%;
+    padding: 1rem; }
   .contNav {
     margin-left: auto;
     margin-right: auto;
@@ -540,7 +577,8 @@ hr {
     font-size: 2rem;
     font-weight: bold; }
   h2 {
-    font-size: 5rem; }
+    font-size: 5rem;
+    margin-top: 1rem; }
   .contenedor__Titulos {
     font-size: 3rem;
     font-weight: bold; }
@@ -558,6 +596,8 @@ hr {
     height: 6rem; } }
 
 @media only screen and (min-width: 1440px) {
+  #sobreMi {
+    width: 80rem; }
   ul.contNav {
     width: 100%; } }
 

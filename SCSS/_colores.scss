@@ -33,8 +33,7 @@ hr{background-color: $bordes;}
 
 .contNav__li a {color: white;}
 
-.contNav__li a:hover {background-color: $bordes;
-border-radius: 70%;}
+.contNav__li a:hover {background-color: $bordes;}
 
 .contNav--acercaDe {background-color:$bordes;
 color: white;}
@@ -109,3 +108,5 @@ h5.card-title{color: white;}
 
 .btn-primary{background-color: $bordes;
     color: white;}
+
+.activo{background-color: $bordes !important;}
