@@ -32,6 +32,8 @@ h2{display: flex;
 
 .juridical-logos{margin-top: 1rem;}
 
+#compas{display: flex;
+flex-direction: column;}
 
 
 
@@ -58,7 +60,7 @@ h2  {display: flex;
     align-content: space-between;}
 
 
-.container.contenedorCompa{display: flex;
+#compas{display: flex;
     flex-direction: row; 
     justify-content: space-evenly;
     flex-wrap: wrap;
